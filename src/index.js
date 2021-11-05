@@ -7,6 +7,7 @@ import thunkMiddleware  from 'redux-thunk';
 import './index.css'; 
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
+import registerServiceWorker from './registerServiceWorker';
 import App from './Containers/App';
 import { searchRobots, requestRobots } from './reducers';
   
@@ -20,4 +21,5 @@ ReactDOM.render(
       <App/>
     </Provider>, document.getElementById('root'));
 reportWebVitals();
+registerServiceWorker();
  
