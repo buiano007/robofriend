@@ -7,7 +7,7 @@ import thunkMiddleware  from 'redux-thunk';
 import './index.css'; 
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
-import registerServiceWorker from './registerServiceWorker';
+import * as serviceWorker from './serviceWorker';
 import App from './Containers/App';
 import { searchRobots, requestRobots } from './reducers';
   
@@ -21,5 +21,10 @@ ReactDOM.render(
       <App/>
     </Provider>, document.getElementById('root'));
 reportWebVitals();
-registerServiceWorker();
+serviceWorker.register();
  
+// {
+//   "src": "safari-pinned-tab.svg",
+//   "type": "image/svg",
+//   "sizes": "467x467"
+// },
